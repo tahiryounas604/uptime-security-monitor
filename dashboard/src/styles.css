@@ -1,0 +1,103 @@
+:root {
+  --bg: #0f1115;
+  --card: #171a21;
+  --text: #e6e8ec;
+  --muted: #9aa3af;
+  --accent: #e8622c;
+  --up: #22a06b;
+  --down: #d64545;
+  --border: #2a2f3a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main { max-width: 1080px; margin: 0 auto; padding: 24px 16px 64px; }
+
+.page-head h1 { margin: 0 0 4px; font-size: 28px; }
+.page-head p { margin: 0 0 24px; color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.card-head h2 { margin: 0 0 4px; font-size: 18px; }
+.card-head a { color: var(--muted); font-size: 13px; word-break: break-all; }
+
+.badge {
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #3a3f4b;
+  color: #fff;
+  white-space: nowrap;
+}
+.badge-up { background: var(--up); }
+.badge-down { background: var(--down); }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 16px;
+  margin: 16px 0;
+}
+.stats div { display: flex; flex-direction: column; }
+.stats dt { font-size: 12px; color: var(--muted); text-transform: uppercase; }
+.stats dd { margin: 2px 0 0; font-size: 15px; font-weight: 600; }
+
+.warn { color: #f5b83d; font-size: 14px; }
+.error { color: #ff8a8a; font-size: 14px; }
+.muted { color: var(--muted); }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+
+form.form label { display: block; margin-bottom: 12px; font-size: 14px; }
+form.form input {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #0f1115;
+  color: var(--text);
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: default; }
+button.danger { background: transparent; border: 1px solid var(--down); color: #ff8a8a; margin-top: 12px; }
