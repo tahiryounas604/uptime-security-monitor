@@ -1,0 +1,1 @@
+{"dependencies":{"react":"^18.3.1","react-dom":"^18.3.1"},"description":"React dashboard for the uptime-security-monitor service","devDependencies":{"@vitejs/plugin-react":"^4.3.1","vite":"^5.4.8"},"name":"uptime-security-monitor-dashboard","private":true,"scripts":{"build":"vite build","dev":"vite","preview":"vite preview"},"type":"module","version":"0.1.0"}
