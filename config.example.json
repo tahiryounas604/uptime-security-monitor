@@ -1,0 +1,1 @@
+{"check_interval_seconds":60,"db_path":"uptime.db","listen":":8080","monitors":[{"check_port":"","expected_status":200,"interval_seconds":60,"keyword":"","name":"Example","ssl_warn_days":30,"timeout_seconds":10,"url":"https://example.com"}],"static_dir":"dashboard/dist","webhook_url":""}
